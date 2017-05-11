@@ -1,0 +1,76 @@
+{
+  "name": "schwartz",
+  "version": "1.0.0",
+  "description": "Improving React knowledge with Wes Bos course walkthrough",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spialelo/space-balls.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "js",
+    "jsx",
+    "html",
+    "css"
+  ],
+  "author": "Nicole Phillips <ndphillips@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spialelo/space-balls/issues"
+  },
+  "homepage": "https://github.com/spialelo/space-balls#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-install": "^1.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "gulp-util": "latest",
+    "jshint": "^2.9.4",
+    "run-sequence": "^1.2.2",
+    "sass": "^0.5.0",
+    "autoprefixer-stylus": "0.10.0",
+    "babel-eslint": "^7.1.1",
+    "concurrently": "3.0.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.8.0",
+    "react-scripts": "0.6.1",
+    "stylus": "0.54.5"
+  },
+  "dependencies": {
+    "history": "4.2.0",
+    "re-base": "2.2.0",
+    "react": "15.3.2",
+    "react-addons-css-transition-group": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-router": "4.0.0-alpha.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/.eslintrc"
+  }
+}
