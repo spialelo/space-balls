@@ -13,3 +13,8 @@ Wes Bos Catch of the Day React App Course
 
 Goal: Improving React knowledge with Wes Bos course
 Environment: Home Windows PC and Cloud 9
+
+####1.0.1 
+- Additional components created: Order, Inventory, & Header
+- Bind this to goToStore method using arrow function. Can also be done using constructor.
+- Used contextTypes to update url when user clicks Visit Store submit button
